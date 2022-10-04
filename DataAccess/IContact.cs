@@ -9,8 +9,7 @@ namespace DataAccess
 {
     public interface IContact
     {
-        Contact GetContact(int id);
-        Contact GetUserContact(int id);
+        Contact GetContact(int id); 
         List<Contact> GetAllContacts();
         Contact CreateContact(Contact contact);
         Contact UpdateContact(Contact contact);
