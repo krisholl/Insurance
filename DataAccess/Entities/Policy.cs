@@ -11,7 +11,7 @@ namespace DataAccess.Entities
         }
 
         public int Id { get; set; }
-        public int? Insurance { get; set; }
+        public int Insurance { get; set; }
         public string Coverage { get; set; } = null!;
 
         [System.Text.Json.Serialization.JsonIgnore]

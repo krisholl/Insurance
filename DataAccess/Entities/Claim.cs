@@ -11,9 +11,9 @@ namespace DataAccess.Entities
         }
 
         public int Id { get; set; }
-        public int? Patient { get; set; }
-        public int? Doctor { get; set; }
-        public int? Policy { get; set; }
+        public int Patient { get; set; }
+        public int Doctor { get; set; }
+        public int Policy { get; set; }
         public string ReasonForVisit { get; set; } = null!;
         public string Status { get; set; } = null!;
 
