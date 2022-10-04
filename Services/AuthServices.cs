@@ -54,6 +54,7 @@ namespace Services
         /// <param name="newUser">Valid User object</param>
         /// <returns>Registered User</returns>
         /// <exception cref="UserNotAvailableException">There is a user with that username already</exception>
+        /// <exception cref="InputInvalidException">There was not enough information</exception>
         public User Register(User newUser)
         {
             try
@@ -62,6 +63,10 @@ namespace Services
                 if(found.Username == newUser.Username)
                 {
                     throw new UserNotAvailableException();
+                }
+                else if (string.IsNullOrWhiteSpace(newUser.Password)|| string.IsNullOrWhiteSpace(newUser.Username) || string.IsNullOrWhiteSpace(newUser.FirstName)||string.IsNullOrWhiteSpace(newUser.LastName))
+                {
+                    throw new InputInvalidException();
                 }
                 else
                 {
@@ -84,6 +89,10 @@ namespace Services
                 throw new UserNotAvailableException();
             }
             catch (UserNotAvailableException)
+            {
+                throw;
+            }
+            catch (InputInvalidException)
             {
                 throw;
             }

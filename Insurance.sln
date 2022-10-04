@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomExceptions", "CustomExceptions\CustomExceptions.csproj", "{75E82499-F20C-4CF6-AB86-8EAF0FBF7910}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{AE6C5F66-6D07-4383-ADB9-D447DD5F8150}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{AE6C5F66-6D07-4383-ADB9-D447DD5F8150}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{A5CBBDC0-D282-4E75-914D-DCE3A8FE977C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{AE6C5F66-6D07-4383-ADB9-D447DD5F8150}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE6C5F66-6D07-4383-ADB9-D447DD5F8150}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE6C5F66-6D07-4383-ADB9-D447DD5F8150}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5CBBDC0-D282-4E75-914D-DCE3A8FE977C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5CBBDC0-D282-4E75-914D-DCE3A8FE977C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5CBBDC0-D282-4E75-914D-DCE3A8FE977C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5CBBDC0-D282-4E75-914D-DCE3A8FE977C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
