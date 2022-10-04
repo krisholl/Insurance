@@ -13,7 +13,7 @@ namespace DataAccess
         Ticket UpdateTicket(Ticket ticket);
         void DeleteTicket(int id);
         Ticket GetTicket(int id);
-        List<Ticket> GetPatientTickets(int id);
+        List<Ticket> GetPatientTickets(int id); 
         List<Ticket> GetAllTickets();
     }
 }

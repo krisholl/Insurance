@@ -13,6 +13,8 @@ namespace DataAccess
         Claim UpdateClaim(Claim claim);
         void DeleteClaim(int id);
         List<Claim> GetAllClaims();
+        List<Claim> GetPatientClaims(int id);
+        List<Claim> GetDoctorClaims(int id);
         Claim GetClaim(int id);
     }
 }
