@@ -6,9 +6,9 @@ namespace DataAccess.Entities
     public partial class Ticket
     {
         public int Id { get; set; }
-        public int? Claim { get; set; }
-        public int? Patient { get; set; }
-        public int? Policy { get; set; }
+        public int Claim { get; set; }
+        public int Patient { get; set; }
+        public int Policy { get; set; }
         public string Notes { get; set; } = null!;
 
         [System.Text.Json.Serialization.JsonIgnore]

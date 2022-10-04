@@ -20,7 +20,7 @@ namespace DataAccess.Entities
         public string? MiddleInit { get; set; }
         public string Username { get; set; } = null!;
         public string Password { get; set; } = null!;
-        public string? Role { get; set; }
+        public string Role { get; set; } = "Patient";
         public int? ContactIdFk { get; set; }
 
         [System.Text.Json.Serialization.JsonIgnore]
